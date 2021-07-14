@@ -7,7 +7,8 @@
     "module": "esnext",
     "moduleResolution": "node",
     "paths": {
-      // "api/*": ["packages/website/api/*"]
+      "common/*": ["packages/common/*"],
+      "website/*": ["packages/website/*"]
     },
     "resolveJsonModule": true,
     "sourceMap": true,

@@ -1,8 +1,11 @@
 {
   "author": "Damien Lau",
   "dependencies": {
+    "axios": "^0.21.1",
     "element-plus": "^1.0.2-beta.55",
-    "vue": "^3.1.4"
+    "store": "^2.0.12",
+    "vue": "^3.1.4",
+    "vuex": "^4.0.2"
   },
   "description": "Nothing",
   "devDependencies": {
