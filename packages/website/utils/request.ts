@@ -1,3 +1,4 @@
+import { ACCESS_TOKEN } from "website/store/mutation-types";
 import axios from "axios";
 import storage from "store";
 
@@ -7,7 +8,7 @@ const request = axios.create({
   timeout: import.meta.env.VITE_APP_API_TIMEOUT,
 });
 
-const token = storage.get("authorization");
+const token = storage.get(ACCESS_TOKEN);
 
 // Error interceptor
 const errorHandler = (error: object) => {
@@ -17,14 +18,14 @@ const errorHandler = (error: object) => {
 // Request interceptor
 request.interceptors.request.use((config) => {
   if (token) {
-    config.headers["authorization"] = token;
+    config.headers[ACCESS_TOKEN] = token;
   }
   return config;
 }, errorHandler);
 
 // Response interceptor
 request.interceptors.response.use((response) => {
-  storage.set("authorization", response.headers["authorization"]);
+  storage.set(ACCESS_TOKEN, response.headers[ACCESS_TOKEN]);
   return response.data;
 }, errorHandler);
 
