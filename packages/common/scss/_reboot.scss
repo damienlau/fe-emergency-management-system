@@ -12,3 +12,13 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba($white, 0);
 }
+
+svg {
+  &.icon {
+    width: $font-size-base;
+    height: $font-size-base;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+}
