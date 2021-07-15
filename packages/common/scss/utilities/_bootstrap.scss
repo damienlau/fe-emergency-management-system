@@ -1,0 +1,29 @@
+// Color system
+$--color-primary: $primary;
+$--color-danger: $danger !default;
+
+// Components
+
+// scss-docs-start input-variables
+$--input-height: inherit !default;
+// scss-docs-end input-variables
+
+// Typography
+/// fontSize|1|Font Size|0
+$--font-size-extra-large: $font-size-lg !default;
+/// fontSize|1|Font Size|0
+$--font-size-large: $font-size-md !default;
+/// fontSize|1|Font Size|0
+$--font-size-medium: $font-size-base !default;
+/// fontSize|1|Font Size|0
+$--font-size-base: $font-size-sm !default;
+/// fontSize|1|Font Size|0
+// $--font-size-small: 13px !default;
+/// fontSize|1|Font Size|0
+$--font-size-extra-small: $font-size-xs !default;
+/// fontWeight|1|Font Weight|1
+$--font-weight-primary: 500 !default;
+/// fontLineHeight|1|Line Height|2
+$--font-line-height-primary: $font-size-xxl !default;
+// $--font-color-disabled-base: #bbb !default;
+$--font-path: "element-plus/lib/theme-chalk/fonts";

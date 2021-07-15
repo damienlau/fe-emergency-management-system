@@ -1,0 +1,201 @@
+// Color system
+
+// scss-docs-start bluish-color-variables
+$bluish-100: #0e518f !default;
+$bluish-200: #0b4070 !default;
+$bluish-300: #06315d !default;
+$bluish-400: #042546 !default;
+$bluish-500: #051d33 !default;
+// scss-docs-end bluish-color-variables
+
+// scss-docs-start bluish-colors-map
+$bluishs: (
+  "100": $bluish-100,
+  "200": $bluish-200,
+  "300": $bluish-300,
+  "400": $bluish-400,
+  "500": $bluish-500,
+) !default;
+// scss-docs-end bluish-colors-map
+
+// scss-docs-start color-variables
+$blue: #1890ff !default;
+$pink: #ff6061 !default;
+$white: #fff !default;
+// scss-docs-end color-variables
+
+// scss-docs-start colors-map
+$colors: (
+  "blue": $blue,
+  "pink": $pink,
+  "white": $white,
+) !default;
+// scss-docs-end colors-map
+
+// scss-docs-start theme-color-variables
+$primary: $blue !default;
+$danger: $pink !default;
+$white: $white !default;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger,
+  "white": $white,
+) !default;
+// scss-docs-end theme-colors-map
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $bluish-500 !default;
+$body-color: rgba($white, 0.9) !default;
+$body-text-align: null !default;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+// scss-docs-start border-variables
+$border-width: 1px !default;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+  6: 6px,
+) !default;
+
+$border-color: $primary !default;
+// scss-docs-end border-variables
+
+// scss-docs-start border-radius-variables
+$border-radius-root: 1rem !default;
+$border-radius-xs: $border-radius-root * 0.25 !default;
+$border-radius-sm: $border-radius-root * 0.375 !default;
+$border-radius-base: $border-radius-root * 0.5 !default;
+$border-radius-md: $border-radius-root * 0.625 !default;
+$border-radius-lg: $border-radius-root * 0.75 !default;
+$border-radius-xs: $border-radius-root * 0.875 !default;
+$border-radius-pill: 50rem !default;
+// scss-docs-end border-radius-variables
+
+// scss-docs-start border-radius
+$border-radius: (
+  4: $border-radius-xs,
+  6: $border-radius-sm,
+  8: $border-radius-base,
+  10: $border-radius-md,
+  12: $border-radius-lg,
+  14: $border-radius-xs,
+) !default;
+// scss-docs-end border-radius
+
+// Spacing
+
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  4: $spacer * 0.25,
+  6: $spacer * 0.375,
+  8: $spacer * 0.5,
+  10: $spacer * 0.625,
+  12: $spacer * 0.75,
+  14: $spacer * 0.875,
+  16: $spacer,
+  18: $spacer * 1.125,
+  20: $spacer * 1.25,
+  22: $spacer * 1.375,
+  24: $spacer * 1.5,
+  26: $spacer * 1.625,
+  28: $spacer * 1.75,
+  30: $spacer * 1.875,
+  32: $spacer * 2,
+) !default;
+// scss-docs-end spacer-variables-maps
+
+// Typography
+
+// scss-docs-start font-variables
+$font-size-root: 1rem !default;
+$font-size-xs: $font-size-root * 0.75 !default;
+$font-size-sm: $font-size-root * 0.875 !default;
+$font-size-base: $font-size-root !default;
+$font-size-md: $font-size-root * 1.125 !default;
+$font-size-lg: $font-size-root * 1.25 !default;
+$font-size-xl: $font-size-root * 1.375 !default;
+$font-size-xxl: $font-size-root * 1.5 !default;
+
+$font-weight-base: 400 !default;
+$font-weight-bold: 500 !default;
+
+$line-height-root: $font-size-root !default;
+$line-height-xs: $line-height-root * 1.25 !default;
+$line-height-sm: $line-height-root * 1.375 !default;
+$line-height-base: $line-height-root * 1.5 !default;
+$line-height-md: $line-height-root * 1.625 !default;
+$line-height-lg: $line-height-root * 1.75 !default;
+$line-height-xl: $line-height-root * 1.875 !default;
+// scss-docs-end font-variables
+
+// scss-docs-start font-sizes
+$font-sizes: (
+  12: $font-size-xs,
+  14: $font-size-sm,
+  16: $font-size-base,
+  18: $font-size-md,
+  20: $font-size-lg,
+  22: $font-size-xl,
+  24: $font-size-xxl,
+) !default;
+// scss-docs-end font-sizes
+
+// scss-docs-start line-heights
+$line-heights: (
+  20: $line-height-xs,
+  22: $line-height-sm,
+  24: $line-height-base,
+  26: $line-height-md,
+  28: $line-height-lg,
+  30: $line-height-xl,
+) !default;
+// scss-docs-end line-heights
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-reduced-motion: true !default;
+$enable-smooth-scroll: true !default;
+$enable-grid-classes: true !default;
+$enable-button-pointers: true !default;
+$enable-rfs: true !default;
+$enable-validation-icons: true !default;
+$enable-negative-margins: false !default;
+$enable-deprecation-messages: true !default;
+$enable-important-utilities: true !default;
+
+// Position
+//
+// Define the edge positioning anchors of the position utilities.
+
+// scss-docs-start position-map
+$position-values: (
+  0: 0,
+  50: 50%,
+  100: 100%,
+) !default;
+// scss-docs-end position-map
+
+// scss-docs-start type-variables
+$text-muted: $primary !default;
+// scss-docs-end type-variables
