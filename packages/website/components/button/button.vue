@@ -1,6 +1,6 @@
 <template>
   <el-button class="lh-22">
-    <dottmed-icon v-if="icon" :icon="icon" />
+    <dottmed-icon class="me-4" v-if="icon" :icon="icon" />
     <slot />
   </el-button>
 </template>

@@ -10,7 +10,7 @@ export default defineComponent({
   },
   setup(props) {
     return () => (
-      <svg class="icon me-4" aria-hidden="true">
+      <svg class="icon" aria-hidden="true">
         <use xlinkHref={"#dottmed-icon-" + props.icon}></use>
       </svg>
     );

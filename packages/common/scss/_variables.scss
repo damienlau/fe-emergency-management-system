@@ -20,21 +20,27 @@ $bluishs: (
 
 // scss-docs-start color-variables
 $blue: #1890ff !default;
+$green: #00c44a !default;
 $pink: #ff6061 !default;
 $white: #fff !default;
+$yellow: #f08e3a !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
 $colors: (
   "blue": $blue,
+  "green": $green,
   "pink": $pink,
   "white": $white,
+  "yellow": $yellow,
 ) !default;
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary: $blue !default;
 $danger: $pink !default;
+$primary: $blue !default;
+$success: $green !default;
+$warning: $yellow !default;
 $white: $white !default;
 // scss-docs-end theme-color-variables
 
@@ -197,5 +203,5 @@ $position-values: (
 // scss-docs-end position-map
 
 // scss-docs-start type-variables
-$text-muted: $primary !default;
+$text-muted: rgba($white, 0.5) !default;
 // scss-docs-end type-variables

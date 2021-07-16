@@ -1,7 +1,20 @@
 // Color system
 // scss-docs-start color-variables
-$--color-primary: $primary;
+$--color-primary: $primary !default;
 $--color-danger: $danger !default;
+$--color-white: $white !default;
+$--color-success: $success !default;
+$--color-warning: $warning !default;
+$--color-info: $text-muted !default;
+
+$--color-text-primary: $body-color !default;
+$--color-text-regular: rgba($white, 0.7) !default;
+$--color-text-secondary: rgba($white, 0.7) !default;
+$--color-text-placeholder: $text-muted !default;
+$--border-color-base: #dcdfe6 !default;
+$--border-color-light: #e4e7ed !default;
+$--border-color-lighter: #ebeef5 !default;
+$--border-color-extra-light: #f2f6fc !default;
 // scss-docs-end color-variables
 
 // Components
@@ -12,6 +25,33 @@ $--button-font-weight: $font-weight-base !default;
 $--button-border-radius: $border-radius-xs !default;
 $--button-padding-vertical: map-get($spacers, 4) !default;
 $--button-padding-horizontal: map-get($spacers, 12) !default;
+
+$--button-default-font-color: $body-color !default;
+// $--button-default-background-color: $--color-white !default;
+// $--button-default-border-color: $--border-color-base !default;
+
+$--button-disabled-font-color: $--color-text-placeholder !default;
+$--button-disabled-background-color: $--color-white !default;
+$--button-disabled-border-color: $--border-color-lighter !default;
+
+$--button-primary-border-color: $--color-primary !default;
+$--button-primary-font-color: $body-color !default;
+$--button-primary-background-color: $--color-primary !default;
+$--button-success-border-color: $--color-success !default;
+$--button-success-font-color: $body-color !default;
+$--button-success-background-color: $--color-success !default;
+$--button-warning-border-color: $--color-warning !default;
+$--button-warning-font-color: $body-color !default;
+$--button-warning-background-color: $--color-warning !default;
+$--button-danger-border-color: $--color-danger !default;
+$--button-danger-font-color: $body-color !default;
+$--button-danger-background-color: $--color-danger !default;
+$--button-info-border-color: $--color-info !default;
+$--button-info-font-color: $body-color !default;
+$--button-info-background-color: $--color-info !default;
+
+$--button-hover-tint-percent: 36% !default;
+$--button-active-shade-percent: 10% !default;
 // scss-docs-end button-variables
 
 // scss-docs-start input-variables
