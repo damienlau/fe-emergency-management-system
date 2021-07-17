@@ -8,17 +8,29 @@ $--color-warning: $warning !default;
 $--color-info: $text-muted !default;
 
 $--color-text-primary: $body-color !default;
-$--color-text-regular: rgba($white, 0.7) !default;
+$--color-text-regular: rgba($white, 0.9) !default;
 $--color-text-secondary: rgba($white, 0.7) !default;
 $--color-text-placeholder: $text-muted !default;
-$--border-color-base: #dcdfe6 !default;
-$--border-color-light: #e4e7ed !default;
-$--border-color-lighter: #ebeef5 !default;
-$--border-color-extra-light: #f2f6fc !default;
+$--background-color-base: transparent !default;
 // scss-docs-end color-variables
 
 // Components
 //
+// scss-docs-start border-variables
+$--border-color-light: #e4e7ed !default;
+$--border-color-lighter: #ebeef5 !default;
+$--border-color-extra-light: #f2f6fc !default;
+$--border-style-base: solid !default;
+$--border-color-hover: $bluish-200 !default;
+$--border-base: $border-width $--border-style-base $border-color !default;
+/// borderRadius|1|Radius|0
+$--border-radius-base: 4px !default;
+/// borderRadius|1|Radius|0
+$--border-radius-small: 2px !default;
+/// borderRadius|1|Radius|0
+$--border-radius-circle: 100% !default;
+// scss-docs-end border-variables
+
 // scss-docs-start button-variables
 $--button-font-size: $font-size-sm !default;
 $--button-font-weight: $font-weight-base !default;
@@ -55,7 +67,38 @@ $--button-active-shade-percent: 10% !default;
 // scss-docs-end button-variables
 
 // scss-docs-start input-variables
+
+$--input-font-color: $--color-text-regular !default;
+
+$--input-border: $--border-base !default;
+$--input-border-color: $border-color !default;
+/// borderRadius||Border|2
+$--input-border-radius: $border-radius-xs !default;
+/// color||Color|0
+$--input-background-color: $body-bg !default;
+/// color||Color|0
+$--input-icon-color: $body-color !default;
+/// color||Color|0
+$--input-placeholder-color: $--color-text-placeholder !default;
+
+$--input-hover-border: $--border-color-hover !default;
+$--input-clear-hover-color: $--color-text-secondary !default;
+
+$--input-focus-border: $--color-primary !default;
+
+// $--input-disabled-fill: $--disabled-fill-base !default;
+// $--input-disabled-border: $--disabled-border-base !default;
+// $--input-disabled-color: $--disabled-color-base !default;
+// $--input-disabled-placeholder-color: $--color-text-placeholder !default;
+
+$--input-font-size: $font-size-xs !default;
 $--input-height: map-get($spacers, 32) !default;
+$--input-medium-font-size: 14px !default;
+$--input-medium-height: 36px !default;
+$--input-small-font-size: 13px !default;
+$--input-small-height: 32px !default;
+$--input-mini-font-size: 12px !default;
+$--input-mini-height: 28px !default;
 // scss-docs-end input-variables
 
 // Typography

@@ -2,6 +2,7 @@ import { defineComponent } from "vue";
 import "common/js/iconfont";
 
 export default defineComponent({
+  name: "DottmedIcon",
   props: {
     icon: {
       type: String,

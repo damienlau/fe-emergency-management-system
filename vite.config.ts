@@ -9,7 +9,7 @@ export default defineConfig({
       localsConvention: "camelCase",
     },
   },
-  plugins: [vue(), vueJsx()],
+  plugins: [vue(), vueJsx({ transformOn: true })],
   resolve: {
     alias: {
       common: resolve(__dirname, "packages/common"),

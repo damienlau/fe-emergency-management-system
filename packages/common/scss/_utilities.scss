@@ -19,6 +19,7 @@ $utilities: map-merge(
             $theme-colors,
             (
               "body": $body-bg,
+              "header": $bluish-300,
               "transparent": transparent,
             )
           ),
