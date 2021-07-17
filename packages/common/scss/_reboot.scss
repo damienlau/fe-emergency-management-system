@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: map-get($spacers, 8);
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: $border-radius-xs;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: $border-radius-xs;
+  background-color: $border-color;
+}
+
 body {
   margin: 0;
   color: $body-color;

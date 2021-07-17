@@ -39,6 +39,7 @@ $colors: (
 // scss-docs-start theme-color-variables
 $danger: $pink !default;
 $primary: $blue !default;
+$secondary: $bluish-400 !default;
 $success: $green !default;
 $warning: $yellow !default;
 $white: $white !default;
@@ -47,6 +48,7 @@ $white: $white !default;
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary": $primary,
+  "secondary": $secondary,
   "danger": $danger,
   "white": $white,
 ) !default;

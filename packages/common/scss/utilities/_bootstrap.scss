@@ -17,7 +17,7 @@ $--background-color-base: transparent !default;
 // Components
 //
 // scss-docs-start border-variables
-$--border-color-light: #e4e7ed !default;
+$--border-color-light: $border-color !default;
 $--border-color-lighter: #ebeef5 !default;
 $--border-color-extra-light: #f2f6fc !default;
 $--border-style-base: solid !default;

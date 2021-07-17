@@ -10,5 +10,7 @@
 // Utilities
 @import "utilities/api";
 @import "utilities/bootstrap";
-@import "element-plus/packages/theme-chalk/src/index";
+
+// Reset
+@import "reset";
 // scss-docs-end import-stack
