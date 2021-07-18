@@ -5,7 +5,7 @@ $--color-danger: $danger !default;
 $--color-white: $white !default;
 $--color-success: $success !default;
 $--color-warning: $warning !default;
-$--color-info: $text-muted !default;
+$--color-info: $bluish-100 !default;
 
 $--color-text-primary: $body-color !default;
 $--color-text-regular: rgba($white, 0.9) !default;
@@ -58,9 +58,9 @@ $--button-warning-background-color: $--color-warning !default;
 $--button-danger-border-color: $--color-danger !default;
 $--button-danger-font-color: $body-color !default;
 $--button-danger-background-color: $--color-danger !default;
-$--button-info-border-color: $--color-info !default;
+$--button-info-border-color: $bluish-100 !default;
 $--button-info-font-color: $body-color !default;
-$--button-info-background-color: $--color-info !default;
+$--button-info-background-color: $bluish-100 !default;
 
 $--button-hover-tint-percent: 36% !default;
 $--button-active-shade-percent: 10% !default;

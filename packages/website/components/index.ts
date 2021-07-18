@@ -1,5 +1,5 @@
-import DottmedButton from "./Button/Button";
-import DottmedIcon from "./Icon/Icon";
+import DottmedButton from "./Button/Button.vue";
+import DottmedIcon from "./Icon/Icon.vue";
 import DottmedInput from "./Input/Input";
 import DottmedTabs from "./Tabs/Tabs.vue";
 
