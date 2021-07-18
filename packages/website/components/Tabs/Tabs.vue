@@ -37,8 +37,6 @@ export default defineComponent({
       return props.dataSource[0]["key"];
     });
 
-    console.log(defaultActiveTabPane.value);
-
     const onClick = (evt: MouseEvent) => {
       emit("click", evt);
     };

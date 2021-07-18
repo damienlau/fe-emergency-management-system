@@ -30,7 +30,7 @@
   "main": "packages/application/index.ts",
   "name": "emergency-management-system",
   "scripts": {
-    "dev:vite": "vite",
+    "dev:vite": "vite --host 127.0.0.1",
     "dev:electron": "electron .",
     "dev": "concurrently \"npm run dev:vite\" \"wait-on tcp:2021 && npm run dev:electron\"",
     "build": "vue-tsc --noEmit && vite build",

@@ -15,9 +15,13 @@ import { defineComponent, ref } from "vue";
 import { DottmedTabs } from "website/components";
 import { FacetimeCard } from "./component";
 
+import Demo from "website/utils/facetime";
+
 export default defineComponent({
   components: { DottmedTabs, FacetimeCard },
   setup() {
+    console.log(Demo);
+
     const defaultTabs = ref([
       { key: "0", label: "人员视频" },
       { key: "1", label: "救援车视频" },

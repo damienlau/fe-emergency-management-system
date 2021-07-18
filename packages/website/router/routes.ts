@@ -11,6 +11,8 @@ const routes = [
         path: "command",
         name: "Command",
         component: PageView,
+        props: { hasBackground: true },
+        // params: { hasBackground: true },
         redirect: { name: "Facetime" },
         children: [
           {
