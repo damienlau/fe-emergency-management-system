@@ -4,12 +4,9 @@ import { Modal } from "ant-design-vue";
 
 export default defineComponent({
   setup() {
-    message.warning("demodemo", 200, () => {
-      console.log(111);
-    });
-
     return () => (
       <>
+        <h1>test</h1>
         <router-view></router-view>
       </>
     );
